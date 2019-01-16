@@ -38,7 +38,7 @@ module.exports = function(Auth) {
     Auth.remoteMethod(
         'authenticate', {
           http: {
-            path: '/authenticate',
+            path: '/authenticate/:username',
             verb: 'post'
           },
           accepts: [
